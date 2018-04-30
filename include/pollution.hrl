@@ -7,8 +7,8 @@
 %%%-------------------------------------------------------------------
 -author("ajopek").
 
--ifndef(POLLUTION_HRL).
--define(POLLUTION_HRL, 1).
+%%-ifndef(POLLUTION_HRL).
+%%-define(POLLUTION_HRL, 1).
 
 -type station_name() :: string().
 -type geo_coords()   :: {float(), float()}.
@@ -28,3 +28,4 @@
 -record(monitor, {name_to_coords    = #{} :: #{station_name() => geo_coords()},
                   coords_to_station = #{} :: #{geo_coords() => station()}}).
 -type monitor() :: #monitor{}.
+
